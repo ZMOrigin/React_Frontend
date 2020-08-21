@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+    border-radius: 0 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App, html, body, #home {
+    width: 100%;
+    height: 100%;
+    background-color: #50c878 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container90 {
+    width: 90%;
+    margin: auto !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ZMButton {
+    font-size: 18px;
+    font-weight: 550 !important;
+    color: black !important;
+    padding: 1.1rem 0 !important;
+    margin: auto 0.8rem !important;
 }
 
-.App-link {
-  color: #61dafb;
+.ZMButton.active {
+    background-color: transparent !important;
+    box-shadow: 0 4px #3C78A0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuContainer {
+    padding:  0.3rem !important;
+    border-bottom: grey solid 1px !important;
+    box-shadow: 0 0 0.3rem black !important;
+}
+
+.fixedTop {
+    position: absolute;
+}
+
+.searchBox {
+    margin: auto;
+    padding-right: 1rem;
+}
+
+
+.searchBox > div > input {
+    border-radius: 0.4rem !important;
+}
+
+.floatRight {
+    margin: auto 0 auto auto !important;
+    float: right;
+}
+
+.menuIcons {
+    color: grey;
+}
+
+.menuIcons.active {
+    padding: 0;
+    margin: auto 1rem;
+    background-color: transparent !important;
+    color: #3C78A0 !important;
+}
+
+.center {
+    margin: auto !important;
+    vertical-align: middle !important;
+}
+
+#jumboContainer {
+    margin: 3rem auto !important;
+}
+
+.jumboButton {
+    font-size: 22px !important;
+    color: white !important;
+    background-color: #3C78A0 !important;
+    border-radius: 0.5rem !important;
+    width: 100%;
+}
+
+.jumboTitle {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.jumboSubTitle {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#homeContainer {
+    height: 100%;
+}
+
+#benefitsContainer {
+    background-color: #3C78A0;
+    text-align: center;
+    padding-top: 2rem !important;
 }
