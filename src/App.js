@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from './Components/Navbar/Navbar'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Redirect } from 'react-router-dom'
 import Routes from './Components/Routes/Routes'
 import './App.css'
 import 'semantic-ui-css/semantic.min.css'
@@ -48,6 +48,7 @@ export default class App extends Component {
             }],
             menuItems: ['Home', 'Teachers', 'Students', 'About']
         })
+        
     }
 
     render = () => {
@@ -55,6 +56,7 @@ export default class App extends Component {
             <Router>
                 <Navbar logo={this.state.company.logo} menuItems={this.state.menuItems} />
                 <Routes routes={[...this.state.menuItems, 'User']} />
+                <Redirect to='/Home' />
             </Router>
         </div>
     }

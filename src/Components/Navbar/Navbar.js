@@ -1,14 +1,22 @@
 import React, { Component } from 'react'
-import { 
-    Menu, 
-    Segment, 
-    Image, 
-    Search, 
+import { connect } from 'react-redux'
+import { addArticle } from '../../Redux/Actions/index'
+import {
+    Menu,
+    Segment,
+    Image,
+    Search,
     Icon
 } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
-export default class Navbar extends Component {
+let mapDispatchToProps = (dispatch) => {
+    return {
+        addArticle: article => dispatch(addArticle(article))
+    }
+}
+
+class Navbar extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -20,14 +28,15 @@ export default class Navbar extends Component {
         this.setState({
             selection: name
         })
+        this.props.addArticle({ name })
     }
 
     render = () => {
         const p = this.props
 
-        return <Segment className='menuContainer fixedTop'>
+        return <Segment className='menuContainer'>
             <Menu secondary className='container90'>
-                <Menu.Header>
+                <Menu.Header as={Link} to='/Home'>
                     <Image src={p.logo} alt='...' />
                 </Menu.Header>
                 {p.menuItems.map((name) => {
@@ -54,3 +63,10 @@ export default class Navbar extends Component {
         </Segment>
     }
 }
+
+const Form = connect(
+    null,
+    mapDispatchToProps
+)(Navbar);
+
+export default Form;

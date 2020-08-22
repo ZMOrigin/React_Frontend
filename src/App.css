@@ -33,10 +33,6 @@
     box-shadow: 0 0 0.3rem black !important;
 }
 
-.fixedTop {
-    position: absolute;
-}
-
 .searchBox {
     margin: auto;
     padding-right: 1rem;
