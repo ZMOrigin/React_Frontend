@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addArticle } from '../../Redux/Actions/index'
+import { changePage } from '../../Redux/Actions/index'
 import {
     Menu,
     Segment,
@@ -12,39 +12,35 @@ import { Link } from 'react-router-dom'
 
 let mapDispatchToProps = (dispatch) => {
     return {
-        addArticle: article => dispatch(addArticle(article))
+        changePage: page => dispatch(changePage(page))
+    }
+}
+
+const mapStateToProps = (state) => {
+    return {
+        page: state.page,
+        data: state.data
     }
 }
 
 class Navbar extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            selection: 'Home',
-        }
-    }
-
     handleClick = (e, { name }) => {
-        this.setState({
-            selection: name
-        })
-        this.props.addArticle({ name })
+        this.props.changePage( name )
+        // console.log(this.props.page)
     }
 
     render = () => {
-        const p = this.props
-
         return <Segment className='menuContainer'>
             <Menu secondary className='container90'>
                 <Menu.Header as={Link} to='/Home'>
-                    <Image src={p.logo} alt='...' />
+                    <Image src={this.props.data.company.logo} alt='...' />
                 </Menu.Header>
-                {p.menuItems.map((name) => {
+                {this.props.data.menuItems.map((name) => {
                     return <Menu.Item as={Link}
                         className='ZMButton'
                         name={name}
                         onClick={this.handleClick}
-                        active={this.state.selection === name}
+                        active={this.props.page === name}
                         to={'/' + name} />
                 })}
                 <Menu.Menu className='floatRight'>
@@ -53,7 +49,7 @@ class Navbar extends Component {
                         to='/User'
                         name='User'
                         onClick={this.handleClick}
-                        active={this.state.selection === 'User'}
+                        active={this.props.page === 'User'}
                         className='menuIcons'
                     >
                         <Icon name='user' size='large' />
@@ -65,8 +61,8 @@ class Navbar extends Component {
 }
 
 const Form = connect(
-    null,
+    mapStateToProps,
     mapDispatchToProps
-)(Navbar);
+)(Navbar)
 
-export default Form;
+export default Form

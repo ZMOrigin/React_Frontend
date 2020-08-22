@@ -1,5 +1,6 @@
-import store from "./Store/index";
-import { addArticle } from "./Actions/index";
+import store from "./Store/index"
+import { changePage, setData } from "./Actions/index"
 
-window.store = store;
-window.addArticle = addArticle;
+window.store = store
+window.changePage = changePage
+window.setData = setData

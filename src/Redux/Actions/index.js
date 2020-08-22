@@ -1,5 +1,9 @@
-import { ADD_ARTICLE } from "../Constants/index";
+import { CHANGE_PAGE, SET_DATA } from "../Constants/index"
 
-export function addArticle(payload) {
-  return { type: ADD_ARTICLE, payload };
+export function changePage(payload) {
+  return { type: CHANGE_PAGE, payload }
+}
+
+export function setData(payload) {
+  return {type: SET_DATA, payload }
 }
