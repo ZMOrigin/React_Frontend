@@ -9,7 +9,7 @@ export default () => {
                 <Image src='https://picsum.photos/300/300' style={{width: '100%'}} alt='...' />
             </Grid.Column>
             <Grid.Column className='center' width={9}>
-                <h1 className='jumboTitle'>Connecting reliable to teachers to students in need. All subjects in all levels of expertise.</h1>
+                <h1 className='jumboTitle'>Connecting reliable to teachers to students in need.</h1>
                 <h1 className='jumboSubTitle'>Join our community and enjoy great content, even before find your ideal teach, with our many free ebooks and other free material.</h1>
                 <Grid>
                     <Grid.Row>
