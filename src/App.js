@@ -15,8 +15,37 @@ export default class App extends Component {
 
     componentWillMount = () => {
         this.setState({
-            companyName: 'ZM Origin',
-            companyLogo: 'https://picsum.photos/200/50',
+            company: {
+                name: "ZM Origin",
+                logo: "https://picsum.photos/200/50",
+                slogan: "Connecting reliable to teachers to students in need. All subjects in all levels of expertise.",
+                intro: "Join our community and enjoy great content, even before find your ideal teach, with our many free ebooks and other free material."
+            },
+            members: [{
+                id: 1341341,
+                name: "Gio",
+                gender: "",
+                avatar: "",
+                speciality: [],
+                intro: "",
+                roll: "teacher"
+            }, {
+                id: 1341341,
+                name: "Gio",
+                gender: "",
+                avatar: "",
+                speciality: [],
+                intro: "",
+                roll: "student"
+            }, {
+                id: 1341341,
+                name: "Gio",
+                gender: "",
+                avatar: "",
+                speciality: [],
+                intro: "",
+                roll: "staff"
+            }],
             menuItems: ['Home', 'Teachers', 'Students', 'About']
         })
     }
@@ -24,7 +53,7 @@ export default class App extends Component {
     render = () => {
         return <div className="App">
             <Router>
-                <Navbar logo={this.state.companyLogo} menuItems={this.state.menuItems}/>
+                <Navbar logo={this.state.company.logo} menuItems={this.state.menuItems} />
                 <Routes routes={[...this.state.menuItems, 'User']} />
             </Router>
         </div>

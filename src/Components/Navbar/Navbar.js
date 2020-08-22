@@ -39,7 +39,7 @@ export default class Navbar extends Component {
                         to={'/' + name} />
                 })}
                 <Menu.Menu className='floatRight'>
-                    <Search className='searchBox' />
+                    <Search className='searchBox' placeholder='Search...' />
                     <Menu.Item as={Link}
                         to='/User'
                         name='User'
