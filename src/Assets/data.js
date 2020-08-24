@@ -8,27 +8,35 @@ let getData = () => {
             benefits: [{
                 title: "lorem",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
-                pic: ""
+                icon: "user"
             }, {
                 title: "lorem",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
-                pic: ""
+                icon: "user"
             }, {
                 title: "lorem",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
-                pic: ""
+                icon: "user"
             }, {
                 title: "lorem",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
-                pic: ""
+                icon: "user"
             }, {
                 title: "lorem",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
-                pic: ""
+                icon: "user"
             }, {
                 title: "lorem",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
-                pic: ""
+                icon: "user"
+            }, {
+                title: "lorem",
+                intro: "lorem ipsumlorem ipsum lorem ipsum",
+                icon: "user"
+            }, {
+                title: "lorem",
+                intro: "lorem ipsumlorem ipsum lorem ipsum",
+                icon: "user"
             }]
         },
         members: [{
