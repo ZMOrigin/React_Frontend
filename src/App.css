@@ -77,6 +77,10 @@
     width: 100%;
 }
 
+.jumboButton:hover {
+    background-color: #50c878 !important;
+}
+
 .jumboTitle {
     font-size: 60px;
     font-weight: bolder;
@@ -102,3 +106,16 @@
     box-shadow: 0px 0px 0px 0px !important;
 }
 
+.cardContainer {
+    margin-bottom: 30px !important
+}
+
+#benefitsTitle {
+    color: white;
+    font-size: 40px;
+    margin: 40px;
+}
+
+a .ui .button .jumboButton:hover {
+    background-color: #50c878 !important
+}
