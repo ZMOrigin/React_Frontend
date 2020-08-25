@@ -4,7 +4,8 @@ import Home from '../Home/Home'
 import Teachers from '../Teachers/Teachers'
 import Students from '../Students/Students'
 import About from '../About/About'
-import User from '../User/User'
+// import User from '../User/User'
+import Login from '../Login/Login'
 
 export default () => {
     return <Switch>
@@ -21,7 +22,8 @@ export default () => {
             <About />
         </Route>
         <Route path='/User'>
-            <User />
+            {/* <User /> */}
+            <Login />
         </Route>
     </Switch>
 }

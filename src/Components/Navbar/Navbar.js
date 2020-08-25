@@ -37,6 +37,7 @@ class Navbar extends Component {
                 </Menu.Header>
                 {this.props.data.menuItems.map((name) => {
                     return <Menu.Item as={Link}
+                        key={name}
                         className='ZMButton'
                         name={name}
                         onClick={this.handleClick}

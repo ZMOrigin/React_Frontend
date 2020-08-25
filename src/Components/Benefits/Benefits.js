@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid } from 'semantic-ui-react'
 import { connect } from 'react-redux'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Icon } from 'semantic-ui-react'
 
 const mapStateToProps = (state) => {
     return {
@@ -16,7 +16,7 @@ class Benefits extends React.Component {
             <Grid className='container90'>
                 <Grid.Row>
                     {this.props.data.company.benefits.map(ele => {
-                        return <Grid.Column width={4}>
+                        return <Grid.Column width={4} key={ele.title}>
                             <Card className="benefitsCard" >
                                 <Card.Content>
                                     <Icon name={ele.icon} style={{color: "white"}} size="huge"/>
