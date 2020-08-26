@@ -6,35 +6,35 @@ let getData = () => {
             slogan: "Connecting reliable to teachers to students in need. All subjects in all levels of expertise.",
             intro: "Join our community and enjoy great content, even before find your ideal teach, with our many free ebooks and other free material.",
             benefits: [{
-                title: "lorem",
+                title: "lorem0",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
                 icon: "user"
             }, {
-                title: "lorem",
+                title: "lorem1",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
                 icon: "user"
             }, {
-                title: "lorem",
+                title: "lorem2",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
                 icon: "user"
             }, {
-                title: "lorem",
+                title: "lorem3",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
                 icon: "user"
             }, {
-                title: "lorem",
+                title: "lorem4",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
                 icon: "user"
             }, {
-                title: "lorem",
+                title: "lorem5",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
                 icon: "user"
             }, {
-                title: "lorem",
+                title: "lorem6",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
                 icon: "user"
             }, {
-                title: "lorem",
+                title: "lorem7",
                 intro: "lorem ipsumlorem ipsum lorem ipsum",
                 icon: "user"
             }]

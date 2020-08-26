@@ -7,13 +7,13 @@ const initialState = {
 
 function rootReducer(state = initialState, action) {
     if (action.type === CHANGE_PAGE) {
-        return Object.assign({},state, {
+        return Object.assign({}, state, {
             page: action.payload
         })
     }
 
     if (action.type === SET_DATA) {
-        return Object.assign({},state, {
+        return Object.assign({}, state, {
             data: action.payload
         })
     }
