@@ -106,16 +106,20 @@
     box-shadow: 0px 0px 0px 0px !important;
 }
 
-.cardContainer {
-    margin-bottom: 30px !important
+#loginContainer {
+    border-radius: 0.5rem !important;
 }
 
-#benefitsTitle {
-    color: white;
-    font-size: 40px;
-    margin: 40px;
+#loginSubmit {
+    border-radius: 0.3rem !important;
+    background-color: #50C878;
+    margin: 2.5rem auto 1rem auto !important;
+}
+#loginSubmit:hover {
+    background-color: #57CC7C;
+    margin: 2.5rem auto 1rem auto !important;
 }
 
-a .ui .button .jumboButton:hover {
-    background-color: #50c878 !important
+#loginFormOptions {
+    text-align: center;
 }

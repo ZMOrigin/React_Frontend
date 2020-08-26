@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Segment, Form, Button, Divider } from 'semantic-ui-react'
+import { Segment, Form, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 class LoginForm extends Component {
@@ -10,7 +10,7 @@ class LoginForm extends Component {
             validEmail: false
         }
     }
-    
+
     validateEmail = (e) => {
         if (e.target.value.includes("@") && e.target.value.split("@")[1].includes(".")) {
             this.setState({
@@ -42,11 +42,11 @@ class LoginForm extends Component {
 
         if ((e.target.value.length >= 8) && containsNum && containsSpecial && containsUpper) {
             this.setState({
-                validEmail: true
+                validPassword: true
             })
         } else {
             this.setState({
-                validEmail: false
+                validPassword: false
             })
         }
     }
@@ -62,9 +62,12 @@ class LoginForm extends Component {
                 <Form.Input type='text' fluid label='email' placeholder='email' id='loginInputEmail' onChange={this.validateEmail} />
                 <Form.Input type='password' fluid label='password' placeholder='password' id='loginInputPassword' onChange={this.validatePassword} />
             </Form>
-            <Divider hidden />
-            <Button id="loginSubmit" type='submit'>Login</Button>
-            <Link to="/Recover">Forgot password?</Link>
+            <Button fluid className={this.state.validEmail && this.state.validPassword ? "" : "disabled"} id="loginSubmit" type='submit'>Login</Button>
+            <div id="loginFormOptions">
+                <Link to="/Recover">Forgot password?</Link>
+                <span> | </span>
+                <Link to="/Register">Register new account!</Link>
+            </div>
         </Segment>
     }
 }
