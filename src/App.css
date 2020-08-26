@@ -137,3 +137,39 @@
 a .ui .button .jumboButton:hover {
     background-color: #50c878 !important
 }
+
+.popup.warning::before {
+    background-color: #FFF6F6 !important;
+    box-shadow: 1px 1px 0 0 #9F3A38 !important;
+}
+
+.popup.warning {
+    color: #9F3A38 !important;
+    background-color: #FFF6F6 !important;
+    border-color: #9F3A38 !important;
+    border-radius: 0.5rem !important;
+}
+
+.popup.success::before {
+    background-color: #F3FFF3 !important;
+    box-shadow: 1px 1px 0 0 #1a531b !important;
+}
+
+.popup.success {
+    color:#1a531b !important;
+    background-color: #F3FFF3 !important;
+    border-color: #1a531b !important;
+    border-radius: 0.5rem !important;
+}
+
+.popup.helper::before {
+    background-color: #F3F3FF !important;
+    box-shadow: 1px 1px 0 0 #3C78A0 !important;
+}
+
+.popup.helper {
+    color: #3C78A0 !important;
+    background-color: #F6F6FF !important;
+    border-color: #3C78A0 !important;
+    border-radius: 0.5rem !important;
+}
