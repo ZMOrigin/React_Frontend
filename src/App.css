@@ -123,3 +123,17 @@
 #loginFormOptions {
     text-align: center;
 }
+
+.cardContainer {
+    margin-bottom: 30px !important
+}
+
+#benefitsTitle {
+    color: white;
+    font-size: 40px;
+    margin: 40px;
+}
+
+a .ui .button .jumboButton:hover {
+    background-color: #50c878 !important
+}
