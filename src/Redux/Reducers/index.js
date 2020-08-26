@@ -5,7 +5,7 @@ const initialState = {
     data: {}
 };
 
-function rootReducer(state = initialState, action) {
+let rootReducer = (state = initialState, action) => {
     if (action.type === CHANGE_PAGE) {
         return Object.assign({}, state, {
             page: action.payload

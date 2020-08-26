@@ -2,11 +2,13 @@ import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import { BrowserRouter as Router, Redirect } from 'react-router-dom'
 import Routes from './Components/Routes/Routes'
+import { Loader } from 'semantic-ui-react'
 import './App.css'
 import 'semantic-ui-css/semantic.min.css'
 import { setData } from "./Redux/Actions/index"
 import { connect } from 'react-redux'
-import getData from './Assets/data'
+//import getData from './Assets/data'
+import { socket } from './client'
 
 let mapDispatchToProps = (dispatch) => {
     return {
@@ -14,25 +16,33 @@ let mapDispatchToProps = (dispatch) => {
     }
 }
 
- class App extends React.Component {
+let mapStateToProps = (state) => {
+    return {
+        data: state.data
+    }
+}
+
+class App extends React.Component {
     constructor(props) {
         super(props)
-        this.props.setData(getData())
+        socket.emit("get", "data", "5f466cc18596f6242caa02b4", (e, data) => {
+            this.props.setData(data)
+        })
     }
 
     render = () => {
         return <div className="App">
-            <Router>
+            {this.props.data.company && this.props.data.menuItems ? <Router>
                 <Navbar />
                 <Routes />
                 <Redirect to='/Home' />
-            </Router>
+            </Router> :  <Loader active size="massive" />}
         </div>
     }
 }
 
 const Form = connect(
-    null,
+    mapStateToProps,
     mapDispatchToProps
 )(App)
 
