@@ -16,7 +16,7 @@ class Benefits extends React.Component {
             <Grid className='container90'>
                 <Grid.Row>
                     {this.props.data.company.benefits.map(ele => {
-                        return <Grid.Column width={4} className="cardContainer">
+                        return <Grid.Column width={4} key={ele.title} className="cardContainer">
                             <Card className="benefitsCard" >
                                 <Card.Content>
                                     <Icon name={ele.icon} style={{color: "white"}} size="huge"/>
