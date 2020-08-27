@@ -25,7 +25,7 @@ let mapStateToProps = (state) => {
 class App extends React.Component {
     constructor(props) {
         super(props)
-        socket.emit("get", "data", "5f466cc18596f6242caa02b4", (e, data) => {
+        socket.emit("get", "appData", "5f466cc18596f6242caa02b4", (e, data) => {
             this.props.setData(data)
         })
     }
