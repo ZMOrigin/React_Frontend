@@ -49,26 +49,18 @@
     border-radius: 0 !important;
 }
 
-.App, html, body, #home {
-    width: 100%;
-    height: 100%;
-    background-color: white !important;
+body {
+    background-color: transparent !important;
+}
+
+html {
+    background-image: url('./Assets/Images/JumboBG2.jpg');
+    background-size: 100%;
 }
 
 .container84 {
     width: 84%;
     margin: auto !important;
-}
-
-.searchBox {
-    margin: auto;
-    padding-right: 1rem;
-}
-
-
-.searchBox > div > input {
-    background-color: #EEE !important;
-    border-radius: 0.4rem !important;
 }
 
 .floatRight {
@@ -79,36 +71,6 @@
 .center {
     margin: auto !important;
     vertical-align: middle !important;
-}
-
-#jumboContainer {
-    margin: 3rem auto !important;
-}
-
-.jumboButton {
-    font-size: 22px !important;
-    color: white !important;
-    background-color: #3C78A0 !important;
-    border-radius: 0.5rem !important;
-    width: 100%;
-}
-
-.jumboButton:hover {
-    background-color: #50c878 !important;
-}
-
-.jumboTitle {
-    font-size: 60px;
-    font-weight: bolder;
-}
-
-.jumboSubTitle {
-    font-size: 30px;
-    font-weight: normal;
-}
-
-#homeContainer {
-    height: 100%;
 }
 
 #benefitsContainer {

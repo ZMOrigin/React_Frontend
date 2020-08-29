@@ -29,11 +29,30 @@ class Navbar extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            openSearch: false
+            openSearch: false,
+            atTop: true
         }
     }
+
+    listenScrollEvent = (e) => {
+        if (window.scrollY < 100) {
+            this.setState({
+                atTop: true
+            })
+        } else {
+            this.setState({
+                atTop: false
+            })
+        }
+        console.log(this.state.atTop)
+    }
+
+    componentDidMount = () => {
+        window.addEventListener('scroll', this.listenScrollEvent)
+    }
+
     handleClick = (e, { name }) => {
-        this.props.changePage( name )
+        this.props.changePage(name)
         // console.log(this.props.page)
     }
 
@@ -44,7 +63,7 @@ class Navbar extends Component {
     }
 
     render = () => {
-        return <Segment id='menuContainer'>
+        return <Segment id='menuContainer' className={!this.state.atTop ? 'white' : null}>
             <Menu secondary className='container84'>
                 <Menu.Header id="menuHeader" as={Link} to='/Home'>
                     <Image src={Logo} alt='...' />

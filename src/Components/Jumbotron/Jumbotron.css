@@ -1,0 +1,27 @@
+#jumboContainer {
+    margin: 12rem auto !important;
+    padding-left: 40%;
+    background-color: transparent !important;
+}
+
+.jumboButton {
+    font-size: 22px !important;
+    color: white !important;
+    background-color: #3F2C81 !important;
+    border-radius: 0.5rem !important;
+    width: 100%;
+}
+
+.jumboButton:hover {
+    background-color: #50c878 !important;
+}
+
+.jumboTitle {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.jumboSubTitle {
+    font-size: 30px;
+    font-weight: normal;
+}

@@ -10,6 +10,10 @@
     box-shadow: none !important;
 }
 
+#menuContainer.white  {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
 #menuHeader{
     width: auto;
     display: flex;
@@ -51,7 +55,7 @@
     height: 2.4rem;
     width: 20rem;
     margin-right: -2rem;
-    background-color: #FAFAFA;
+    background-color: #fafafaa1;
 }
 #navSearch > .searchInput:focus {
     outline: none;
