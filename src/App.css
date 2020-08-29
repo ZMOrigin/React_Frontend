@@ -52,32 +52,12 @@
 .App, html, body, #home {
     width: 100%;
     height: 100%;
-    background-color: #EEE !important;
+    background-color: white !important;
 }
 
-.container90 {
-    width: 90%;
+.container84 {
+    width: 84%;
     margin: auto !important;
-}
-
-.ZMButton {
-    font-size: 18px;
-    font-weight: 550 !important;
-    color: white !important;
-    padding: 1.1rem 0 !important;
-    margin: auto 0.8rem !important;
-}
-
-.ZMButton.active {
-    background-color: transparent !important;
-    box-shadow: 0 4px #50c878 !important;
-}
-
-.menuContainer {
-    background-color: #3C78A0 !important;
-    padding:  0.3rem !important;
-    border-bottom: grey solid 1px !important;
-    box-shadow: 0 0 0.3rem black !important;
 }
 
 .searchBox {
@@ -94,17 +74,6 @@
 .floatRight {
     margin: auto 0 auto auto !important;
     float: right;
-}
-
-.menuIcons {
-    color: grey;
-}
-
-.menuIcons.active {
-    padding: 0;
-    margin: auto 1rem;
-    background-color: transparent !important;
-    color: #50c878 !important;
 }
 
 .center {

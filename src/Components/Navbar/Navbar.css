@@ -1,0 +1,67 @@
+#menuContainer {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    height: 5rem !important;
+    box-shadow: none !important;
+}
+
+#menuHeader{
+    width: auto;
+    display: flex;
+    color: white;
+    background-color: #3F2C81;
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+#menuHeader > img {
+    height: 3.5rem;
+    display:inline-flex;
+}
+
+#menuHeader > h1 {
+    display:inline-flex;
+    font-size: 3rem;
+    font-family: "Anodina";
+    margin: -0.3rem 0.25rem 0 1rem;
+}
+
+.NavButton {
+    background-color: transparent !important;
+    font-size: 1.3rem;
+    padding: 0px !important;
+    margin: 0.75rem !important;
+}
+
+#navSearch {
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+    margin: 0.75rem !important;
+}
+
+#navSearch > .searchInput {
+    border: 1px #8080807e solid;
+    border-radius: 0.6rem !important;
+    height: 2.4rem;
+    width: 20rem;
+    margin-right: -2rem;
+    background-color: #FAFAFA;
+}
+#navSearch > .searchInput:focus {
+    outline: none;
+}
+
+#navSearch > .hiddenInput {
+    display: none;
+}
+
+#navSearch > .searchIcon {
+    display: inline-flex !important;
+    margin: auto;
+}
+
+#navSearch > .searchIcon:hover {
+    cursor: pointer; 
+}
