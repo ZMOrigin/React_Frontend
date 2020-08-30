@@ -41,6 +41,9 @@
     padding: 0px !important;
     margin: 0.75rem !important;
 }
+.NavButton.active {
+    border-bottom: 1px black solid !important;
+}
 
 #navSearch {
     display: flex;

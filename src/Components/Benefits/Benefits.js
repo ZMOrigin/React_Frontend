@@ -2,6 +2,8 @@ import React from 'react'
 import { Grid } from 'semantic-ui-react'
 import { connect } from 'react-redux'
 import { Card, Icon } from 'semantic-ui-react'
+import './Benefits.css'
+
 
 const mapStateToProps = (state) => {
     return {

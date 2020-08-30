@@ -7,7 +7,6 @@ import {
     Menu,
     Segment,
     Image,
-    Button,
     Icon
 } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'

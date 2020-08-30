@@ -1,0 +1,20 @@
+#benefitsTitle {
+    color: white;
+    font-size: 40px;
+    margin: 40px;
+}
+
+#benefitsContainer {
+    background-color: #3C78A0;
+    text-align: center;
+    padding-top: 2rem !important;
+}
+
+.ui.card, .ui.cards>.card .benefitsCard {
+    background-color: transparent !important;
+    box-shadow: 0px 0px 0px 0px !important;
+}
+
+.cardContainer {
+    margin-bottom: 30px !important
+}

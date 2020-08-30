@@ -1,6 +1,6 @@
 #jumboContainer {
-    margin: 12rem auto !important;
-    padding-left: 40%;
+    margin: 0 auto !important;
+    padding: 12rem 0 12rem 40%;
     background-color: transparent !important;
 }
 

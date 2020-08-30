@@ -49,16 +49,7 @@
     border-radius: 0 !important;
 }
 
-body {
-    background-color: transparent !important;
-}
-
-html {
-    background-image: url('./Assets/Images/JumboBG2.jpg');
-    background-size: 100%;
-}
-
-.container84 {
+.container84 {  
     width: 84%;
     margin: auto !important;
 }
@@ -71,17 +62,6 @@ html {
 .center {
     margin: auto !important;
     vertical-align: middle !important;
-}
-
-#benefitsContainer {
-    background-color: #3C78A0;
-    text-align: center;
-    padding-top: 2rem !important;
-}
-
-.ui.card, .ui.cards>.card .benefitsCard {
-    background-color: transparent !important;
-    box-shadow: 0px 0px 0px 0px !important;
 }
 
 #loginContainer {
@@ -100,20 +80,6 @@ html {
 
 #loginFormOptions {
     text-align: center;
-}
-
-.cardContainer {
-    margin-bottom: 30px !important
-}
-
-#benefitsTitle {
-    color: white;
-    font-size: 40px;
-    margin: 40px;
-}
-
-a .ui .button .jumboButton:hover {
-    background-color: #50c878 !important
 }
 
 .popup.warning::before {
