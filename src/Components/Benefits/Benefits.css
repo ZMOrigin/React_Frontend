@@ -1,13 +1,29 @@
-#benefitsTitle {
-    color: white;
-    font-size: 40px;
-    margin: 40px;
+#benefitsHeader {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;    
 }
 
-#benefitsContainer {
+.pointBars {
+    height: 10px;
+    width: 150px;
+    background-color: #3F2C81
+}
+
+#benefitsTitle {
+    font-size: 25px;
+    color: #808080;
+    margin: 0px!important;
+    letter-spacing: 0.5rem;
+}
+
+/* #benefitsContainer {
     background-color: #3C78A0;
     text-align: center;
     padding-top: 2rem !important;
+} */
+
+#benefitsContainer {
+    background-color: #ffffff !important;
 }
 
 .ui.card, .ui.cards>.card .benefitsCard {
@@ -17,4 +33,11 @@
 
 .cardContainer {
     margin-bottom: 30px !important
+}
+
+.benefitsDetails {
+    margin: 0px;
+    position: relative;
+    top: -55px;
+    left: 50px
 }

@@ -14,23 +14,31 @@ const mapStateToProps = (state) => {
 class Benefits extends React.Component {
     render() {
         return <div id='benefitsContainer'>
-            <h1 id="benefitsTitle">Why you should join us?</h1>
-            <Grid className='container90'>
-                <Grid.Row>
+            <div className="container84" id="benefitsHeader">
+                <div class="pointBars"></div>
+                <h3 id="benefitsTitle">Why you should join us?</h3>
+            </div>
+            <Grid className='container84'>
+                <Grid.Row columns={3}>
                     {this.props.data.company.benefits.map(ele => {
-                        return <Grid.Column width={4} key={ele.title} className="cardContainer">
-                            <Card className="benefitsCard" >
-                                <Card.Content>
-                                    <Icon name={ele.icon} style={{color: "white"}} size="huge"/>
-                                </Card.Content>
-                                <Card.Content className="fontWhite" >
-                                    <Card.Header style={{color: "white"}}>{ele.title}</Card.Header>
-                                    <Card.Description style={{color: "white"}}>
-                                        {ele.intro}
-                                    </Card.Description>
-                                </Card.Content>
-                            </Card>
+                        return <Grid.Column key={ele.title} className="cardContainer">
+                            <Icon name={ele.icon} style={{ color: "#b6b6b6" }} size="massive" />
+                            <h2 className="benefitsDetails">{ele.intro}</h2>
                         </Grid.Column>
+
+                        // return <Grid.Column width={4} key={ele.title} className="cardContainer">
+                        //     <Card className="benefitsCard" >
+                        //         <Card.Content>
+                        //             <Icon name={ele.icon} style={{ color: "black" }} size="huge" />
+                        //         </Card.Content>
+                        //         <Card.Content >
+                        //             <Card.Header style={{ color: "black" }}>{ele.title}</Card.Header>
+                        //             <Card.Description style={{ color: "black" }}>
+                        //                 {ele.intro}
+                        //             </Card.Description>
+                        //         </Card.Content>
+                        //     </Card>
+                        // </Grid.Column>
                     })}
                 </Grid.Row>
             </Grid>
