@@ -11,6 +11,12 @@
 
 @font-face {
     font-family: 'Roboto';
+    src: url('./Assets/Fonts/Roboto/Roboto-Light.ttf');
+    font-style: lighter;
+} 
+
+@font-face {
+    font-family: 'Roboto';
     src: url('./Assets/Fonts/Roboto/Roboto-BoldItalic.ttf');
     font-style: bold, italic;
 } 

@@ -1,0 +1,11 @@
+footer {
+    background-color: #3F2C81;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer > p {
+    height: 40px;
+    padding: 10px;
+    font-family: "Roboto";
+}

@@ -15,14 +15,14 @@ class Benefits extends React.Component {
     render() {
         return <div id='benefitsContainer'>
             <div className="container84" id="benefitsHeader">
-                <div class="pointBars"></div>
+                <div className="pointBars"></div>
                 <h3 id="benefitsTitle">Why you should join us?</h3>
             </div>
             <Grid className='container84'>
                 <Grid.Row columns={3}>
                     {this.props.data.company.benefits.map(ele => {
                         return <Grid.Column key={ele.title} className="cardContainer">
-                            <Icon name={ele.icon} style={{ color: "#b6b6b6" }} size="massive" />
+                            <Icon name={ele.icon} style={{ color: "#f0f0f0" }} size="massive" />
                             <h2 className="benefitsDetails">{ele.intro}</h2>
                         </Grid.Column>
 

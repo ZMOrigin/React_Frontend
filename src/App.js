@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
+import Footer from "./Components/Footer/Footer"
 import { BrowserRouter as Router, Redirect } from 'react-router-dom'
 import Routes from './Components/Routes/Routes'
 import { Loader } from 'semantic-ui-react'
@@ -37,6 +38,7 @@ class App extends React.Component {
                 <Routes />
                 <Redirect to='/Home' />
             </Router> :  <Loader active size="massive" />}
+            <Footer />
         </div>
     }
 }
