@@ -1,0 +1,17 @@
+#loginContainer {
+    border-radius: 0.5rem !important;
+}
+
+#loginSubmit {
+    border-radius: 0.3rem !important;
+    background-color: #50C878;
+    margin: 2.5rem auto 1rem auto !important;
+}
+#loginSubmit:hover {
+    background-color: #57CC7C;
+    margin: 2.5rem auto 1rem auto !important;
+}
+
+#loginFormOptions {
+    text-align: center;
+}

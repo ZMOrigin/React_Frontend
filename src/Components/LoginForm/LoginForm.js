@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Segment, Form, Button, Popup } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import "./LoginForm.css"
 
 class LoginForm extends Component {
     constructor(props) {
