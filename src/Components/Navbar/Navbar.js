@@ -52,7 +52,6 @@ class Navbar extends React.Component {
 
     handleClick = (e, { name }) => {
         this.props.changePage(name)
-        // console.log(this.props.page)
     }
 
     toggleSearch = (e) => {
@@ -62,6 +61,7 @@ class Navbar extends React.Component {
     }
 
     render = () => {
+        console.log(this.props.page)
         return <Segment id='menuContainer' className={!this.state.atTop ? 'white' : null}>
             <Menu secondary className='container84'>
                 <Menu.Header id="menuHeader" as={Link} to='/Home'>

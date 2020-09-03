@@ -38,11 +38,20 @@
 .NavButton {
     background-color: transparent !important;
     font-size: 1.3rem;
-    padding: 0px !important;
-    margin: 0.75rem !important;
+    padding: 10px !important;
+    padding-bottom: 26px !important;
+    padding-top: 25px !important;
+    margin: 0px !important;
 }
+
 .NavButton.active {
-    border-bottom: 1px black solid !important;
+    border-bottom: 6px #3F2C81 solid !important;
+    padding-bottom: 20px !important;
+    color: #3F2C81 !important
+}
+
+.item.menuIcons.active  {
+    color: #3F2C81 !important
 }
 
 #navSearch {
