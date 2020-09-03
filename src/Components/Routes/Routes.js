@@ -7,23 +7,26 @@ import About from '../About/About'
 // import User from '../User/User'
 import Login from '../Login/Login'
 
-export default () => {
-    return <Switch>
-        <Route path='/Home'>
-            <Home />
-        </Route>
-        <Route path='/Teachers'>
-            <Teachers />
-        </Route>
-        <Route path='/Students'>
-            <Students />
-        </Route>
-        <Route path='/About'>
-            <About />
-        </Route>
-        <Route path='/User'>
-            {/* <User /> */}
-            <Login />
-        </Route>
-    </Switch>
+class Routes extends React.Component {
+    render() {
+        return <Switch>
+            <Route path='/Home'>
+                <Home />
+            </Route>
+            <Route path='/Teachers'>
+                <Teachers />
+            </Route>
+            <Route path='/Students'>
+                <Students />
+            </Route>
+            <Route path='/About'>
+                <About />
+            </Route>
+            <Route path='/User'>
+                {/* <User /> */}
+                <Login />
+            </Route>
+        </Switch>
+    }
 }
+export default Routes

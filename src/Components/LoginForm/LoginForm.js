@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Segment, Form, Button, Popup } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import "./LoginForm.css"
 
-class LoginForm extends Component {
+class LoginForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -71,19 +71,19 @@ class LoginForm extends Component {
             email: {
                 help: <Popup
                     className="helper"
-                    trigger={<Form.Input type='text' fluid label='email' placeholder='email' id='loginInputEmail' onChange={this.validateEmail} />}
+                    trigger={<Form.Input type='text' fluid label='Email' placeholder='email' id='loginInputEmail' onChange={this.validateEmail} />}
                     content="email format: 'email@provider.sufix'"
                     on='focus' />,
 
                 invalid: <Popup
                     className="warning"
-                    trigger={<Form.Input type='text' fluid label='email' placeholder='email' id='loginInputEmail' onChange={this.validateEmail} />}
+                    trigger={<Form.Input type='text' fluid label='Email' placeholder='email' id='loginInputEmail' onChange={this.validateEmail} />}
                     content="invalid email, please make sure the format is correct."
                     on='click' />,
 
                 valid: <Popup
                     className="success"
-                    trigger={<Form.Input type='text' fluid label='email' placeholder='email' id='loginInputEmail' onChange={this.validateEmail} />}
+                    trigger={<Form.Input type='text' fluid label='Email' placeholder='email' id='loginInputEmail' onChange={this.validateEmail} />}
                     content="This email seems to valid and not yet registered!"
                     on='focus' />
             },
@@ -113,11 +113,13 @@ class LoginForm extends Component {
                 {this.state.emailLen === 0 ? popups.email.help : this.state.validEmail ? popups.email.valid : popups.email.invalid}
                 {this.state.passwordLen === 0 ? popups.password.help : this.state.validPassword ? popups.password.valid : popups.password.invalid}
             </Form>
-            <Button fluid className={this.state.validEmail && this.state.validPassword ? "" : "disabled"} id="loginSubmit" type='submit'>Login</Button>
-            <div id="loginFormOptions">
-                <Link to="/Recover">Forgot password?</Link>
-                <span> | </span>
-                <Link to="/Register">Register new account!</Link>
+            <div id="formBottomGroup">
+                <Button fluid className={this.state.validEmail && this.state.validPassword ? "" : "disabled"} id="loginSubmit" type='submit'>Login</Button>
+                <div id="loginFormOptions">
+                    <Link to="/Recover">Forgot password?</Link>
+                    <span> | </span>
+                    <Link to="/Register">Register new account!</Link>
+                </div>
             </div>
         </Segment>
     }

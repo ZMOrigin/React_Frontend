@@ -1,21 +1,14 @@
-import React, { Component } from 'react'
-import { Grid, Image } from 'semantic-ui-react'
+import React from 'react'
 import LoginForm from '../LoginForm/LoginForm'
+import "./Login.css"
 
-class Login extends Component {
-
-    render = () => {
-
-        return <Grid className="container90">
-            <Grid.Row>
-                <Grid.Column width={7}>
-                    <Image />
-                </Grid.Column>
-                <Grid.Column width={9}>
-                    <LoginForm />
-                </Grid.Column>
-            </Grid.Row>
-        </Grid>
+class Login extends React.Component {
+    render() {
+        return <div id="loginContainerWrapper">
+            <div id="loginFormContainer" className="container84">
+                <LoginForm />
+            </div>
+        </div>
     }
 }
 

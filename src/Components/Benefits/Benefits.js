@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid } from 'semantic-ui-react'
 import { connect } from 'react-redux'
-import { Card, Icon } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 import './Benefits.css'
 
 
@@ -25,20 +25,6 @@ class Benefits extends React.Component {
                             <Icon name={ele.icon} style={{ color: "#f0f0f0" }} size="massive" />
                             <h2 className="benefitsDetails">{ele.intro}</h2>
                         </Grid.Column>
-
-                        // return <Grid.Column width={4} key={ele.title} className="cardContainer">
-                        //     <Card className="benefitsCard" >
-                        //         <Card.Content>
-                        //             <Icon name={ele.icon} style={{ color: "black" }} size="huge" />
-                        //         </Card.Content>
-                        //         <Card.Content >
-                        //             <Card.Header style={{ color: "black" }}>{ele.title}</Card.Header>
-                        //             <Card.Description style={{ color: "black" }}>
-                        //                 {ele.intro}
-                        //             </Card.Description>
-                        //         </Card.Content>
-                        //     </Card>
-                        // </Grid.Column>
                     })}
                 </Grid.Row>
             </Grid>

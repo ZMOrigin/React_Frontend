@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { changePage } from '../../Redux/Actions/index'
 import Logo from '../../Assets/Images/ZM_Logo_White.png'
@@ -24,7 +24,7 @@ const mapStateToProps = (state) => {
     }
 }
 
-class Navbar extends Component {
+class Navbar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {

@@ -3,9 +3,13 @@ import Jumbotron from '../Jumbotron/Jumbotron'
 import Benefits from '../Benefits/Benefits'
 import './Home.css'
 
-export default () => {
-    return <div id='homeContainer'>
-        <Jumbotron />
-        <Benefits />
-    </div>
+class Home extends React.Component {
+    render() {
+        return <div id='homeContainer'>
+            <Jumbotron />
+            <Benefits />
+        </div>
+    }
 }
+
+export default Home

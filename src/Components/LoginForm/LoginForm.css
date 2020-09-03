@@ -1,17 +1,35 @@
 #loginContainer {
     border-radius: 0.5rem !important;
+    height: 350px !important;
+    margin-left: auto;
+    margin-right: 0px;
 }
 
 #loginSubmit {
     border-radius: 0.3rem !important;
     background-color: #50C878;
-    margin: 2.5rem auto 1rem auto !important;
 }
+
 #loginSubmit:hover {
     background-color: #57CC7C;
-    margin: 2.5rem auto 1rem auto !important;
 }
 
 #loginFormOptions {
     text-align: center;
+    margin-top: 10px
+}
+
+#loginForm {
+    padding-top: 15px
+}
+
+
+#formBottomGroup {
+    padding-top: 60px
+}
+
+#loginForm > 
+.field >
+.ui.fluid.input {
+    margin-top: 10px !important;
 }

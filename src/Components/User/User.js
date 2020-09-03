@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class User extends Component {
-    render = () => {
+class User extends React.Component {
+    render() {
         return <div>
             <h1>User data</h1>
         </div>
     }
 }
+
+export default User

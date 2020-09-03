@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Teachers extends Component {
+class Teachers extends React.Component {
     render = () => {
         return <div>
             <h1>Find a reliable teacher!</h1>
         </div>
     }
 }
+
+export default Teachers
