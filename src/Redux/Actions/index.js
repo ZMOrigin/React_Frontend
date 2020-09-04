@@ -7,3 +7,7 @@ export function changePage(payload) {
 export function setData(payload) {
   return {type: SET_DATA, payload }
 }
+
+export function setUsers(payload) {
+  return {type: SET_DATA, payload }
+}

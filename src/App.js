@@ -6,20 +6,22 @@ import Routes from './Components/Routes/Routes'
 import { Loader } from 'semantic-ui-react'
 import './App.css'
 import 'semantic-ui-css/semantic.min.css'
-import { setData } from "./Redux/Actions/index"
+import { setData, setUsers } from "./Redux/Actions/index"
 import { connect } from 'react-redux'
 //import getData from './Assets/data'
 import { socket } from './client'
 
 let mapDispatchToProps = (dispatch) => {
     return {
-        setData: data => dispatch(setData(data))
+        setData: data => dispatch(setData(data)),
+        setUsers: users => dispatch(setUsers(users))
     }
 }
 
 let mapStateToProps = (state) => {
     return {
-        data: state.data
+        data: state.data,
+        users: state.users
     }
 }
 
@@ -29,9 +31,115 @@ class App extends React.Component {
         socket.emit("get", "appData", "5f466cc18596f6242caa02b4", (e, data) => {
             this.props.setData(data)
         })
+        const users = [{
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "www...",
+            country: "China",
+            role: "Teacher",
+            curricula: ["English", "Math", "CS"]
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "www...",
+            country: "China",
+            role: "Teacher",
+            curricula: ["English", "Math", "CS"]
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "www...",
+            country: "China",
+            role: "Teacher",
+            curricula: ["English", "Math", "CS"]
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "www...",
+            country: "China",
+            role: "Teacher",
+            curricula: ["English", "Math", "CS"]
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "www...",
+            country: "China",
+            role: "Teacher",
+            curricula: ["English", "Math", "CS"]
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "www...",
+            country: "China",
+            role: "Student",
+            curricula: ["English", "Math", "CS"]
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "www...",
+            country: "China",
+            role: "Student",
+            curricula: ["English", "Math", "CS"]
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "www...",
+            country: "China",
+            role: "Student",
+            curricula: ["English", "Math", "CS"]
+        }]
     }
 
     render = () => {
+        console.log(this.props)
         return <div className="App">
             {this.props.data.company && this.props.data.menuItems ? <Router>
                 <Navbar />
