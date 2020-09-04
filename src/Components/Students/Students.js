@@ -1,11 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import CardGroup from "../CardGroup/CardGroup"
+
+const mapStateToProps = (state) => {
+    const students = state.users.filter(user => {
+        return user.role === "Student"
+    })
+    return {
+        users: students
+    }
+}
 
 class Students extends React.Component {
     render() {
         return <div>
-            <h1>Find a student in need!</h1>
+            <CardGroup users={this.props.users} />
         </div>
     }
 }
 
-export default Students
+const Form = connect(
+    mapStateToProps,
+    null
+)(Students)
+
+export default Form

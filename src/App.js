@@ -40,10 +40,12 @@ class App extends React.Component {
             password: "123456qwerty",
             wechat: "Bill_YJ_Zhang",
             gender: "Male",
-            avatar: "www...",
+            avatar: "https://picsum.photos/400",
             country: "China",
+            language: ["Chinese", "English"],
             role: "Teacher",
-            curricula: ["English", "Math", "CS"]
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
         }, {
             name: {
                 firstName: "Bill",
@@ -53,10 +55,12 @@ class App extends React.Component {
             password: "123456qwerty",
             wechat: "Bill_YJ_Zhang",
             gender: "Male",
-            avatar: "www...",
+            avatar: "https://picsum.photos/400",
             country: "China",
+            language: ["Chinese", "English"],
             role: "Teacher",
-            curricula: ["English", "Math", "CS"]
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
         }, {
             name: {
                 firstName: "Bill",
@@ -66,10 +70,12 @@ class App extends React.Component {
             password: "123456qwerty",
             wechat: "Bill_YJ_Zhang",
             gender: "Male",
-            avatar: "www...",
+            avatar: "https://picsum.photos/400",
             country: "China",
+            language: ["Chinese", "English"],
             role: "Teacher",
-            curricula: ["English", "Math", "CS"]
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
         }, {
             name: {
                 firstName: "Bill",
@@ -79,10 +85,12 @@ class App extends React.Component {
             password: "123456qwerty",
             wechat: "Bill_YJ_Zhang",
             gender: "Male",
-            avatar: "www...",
+            avatar: "https://picsum.photos/400",
             country: "China",
+            language: ["Chinese", "English"],
             role: "Teacher",
-            curricula: ["English", "Math", "CS"]
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
         }, {
             name: {
                 firstName: "Bill",
@@ -92,10 +100,12 @@ class App extends React.Component {
             password: "123456qwerty",
             wechat: "Bill_YJ_Zhang",
             gender: "Male",
-            avatar: "www...",
+            avatar: "https://picsum.photos/400",
             country: "China",
+            language: ["Chinese", "English"],
             role: "Teacher",
-            curricula: ["English", "Math", "CS"]
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
         }, {
             name: {
                 firstName: "Bill",
@@ -105,10 +115,72 @@ class App extends React.Component {
             password: "123456qwerty",
             wechat: "Bill_YJ_Zhang",
             gender: "Male",
-            avatar: "www...",
+            avatar: "https://picsum.photos/400",
             country: "China",
+            language: ["Chinese", "English"],
+            role: "Teacher",
+            specialty: ["English", "Math", "blabla", "hello", "aloha", "sawadika"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Teacher",
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Teacher",
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Teacher",
+            specialty: ["English", "Math", "blabla", "hello", "aloha", "sawadika"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
             role: "Student",
-            curricula: ["English", "Math", "CS"]
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
         }, {
             name: {
                 firstName: "Bill",
@@ -118,10 +190,12 @@ class App extends React.Component {
             password: "123456qwerty",
             wechat: "Bill_YJ_Zhang",
             gender: "Male",
-            avatar: "www...",
+            avatar: "https://picsum.photos/400",
             country: "China",
+            language: ["Chinese", "English"],
             role: "Student",
-            curricula: ["English", "Math", "CS"]
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
         }, {
             name: {
                 firstName: "Bill",
@@ -131,22 +205,113 @@ class App extends React.Component {
             password: "123456qwerty",
             wechat: "Bill_YJ_Zhang",
             gender: "Male",
-            avatar: "www...",
+            avatar: "https://picsum.photos/400",
             country: "China",
+            language: ["Chinese", "English"],
             role: "Student",
-            curricula: ["English", "Math", "CS"]
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Student",
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Student",
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Student",
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Student",
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Student",
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
+        }, {
+            name: {
+                firstName: "Bill",
+                lastName: "Zhang"
+            },
+            email: "Bill-Yunjie-Zhang@outloo.com",
+            password: "123456qwerty",
+            wechat: "Bill_YJ_Zhang",
+            gender: "Male",
+            avatar: "https://picsum.photos/400",
+            country: "China",
+            language: ["Chinese", "English"],
+            role: "Student",
+            specialty: ["English", "Math"], 
+            intro: "lorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem ilorem lorem i"
         }]
         this.props.setUsers(users)
     }
 
     render = () => {
-        console.log(this.props)
         return <div className="App">
             {this.props.data.company && this.props.data.menuItems ? <Router>
                 <Navbar />
                 <Routes />
                 <Redirect to='/Home' />
-            </Router> :  <Loader active size="massive" />}
+            </Router> : <Loader active size="massive" />}
             <Footer />
         </div>
     }

@@ -1,0 +1,30 @@
+.cardWrapper{
+    padding-top: 90px
+}
+
+.userCards {
+    height: 200px;
+    padding: 20px
+}
+
+.userCards>.ui.grid>.row>.column{
+    padding-right: 0px!important
+}
+
+.userCards>.description{
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.specialties {
+    margin-top: 10px
+}
+
+.specialty {
+    background-color: #858585;
+    color: #ffffff;
+    padding: 2px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
