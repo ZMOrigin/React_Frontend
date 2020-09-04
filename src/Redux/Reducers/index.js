@@ -1,8 +1,9 @@
-import { CHANGE_PAGE, SET_DATA } from '../Constants/index'
+import { CHANGE_PAGE, SET_DATA, SET_USERS } from '../Constants/index'
 
 const initialState = {
     page: "Home",
-    data: {}
+    data: {},
+    users: []
 };
 
 let rootReducer = (state = initialState, action) => {
@@ -17,6 +18,13 @@ let rootReducer = (state = initialState, action) => {
             data: action.payload
         })
     }
+
+    if (action.type === SET_USERS) {
+        return Object.assign({}, state, {
+            users: action.payload
+        })
+    }
+
     return state;
 }
 

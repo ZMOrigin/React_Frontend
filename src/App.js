@@ -136,6 +136,7 @@ class App extends React.Component {
             role: "Student",
             curricula: ["English", "Math", "CS"]
         }]
+        this.props.setUsers(users)
     }
 
     render = () => {

@@ -1,4 +1,4 @@
-import { CHANGE_PAGE, SET_DATA } from "../Constants/index"
+import { CHANGE_PAGE, SET_DATA, SET_USERS } from "../Constants/index"
 
 export function changePage(payload) {
   return { type: CHANGE_PAGE, payload }
@@ -9,5 +9,5 @@ export function setData(payload) {
 }
 
 export function setUsers(payload) {
-  return {type: SET_DATA, payload }
+  return {type: SET_USERS, payload }
 }
