@@ -82,10 +82,10 @@ class Navbar extends React.Component {
                         <Icon className='searchIcon' size='large' name='search' onClick={this.toggleSearch} />
                     </div>
                     <Menu.Item as={Link}
-                        to='/User'
-                        name='User'
+                        to='/Login'
+                        name='Login'
                         onClick={this.handleClick}
-                        active={this.props.page === 'User'}
+                        active={this.props.page === 'Login'}
                         className='menuIcons'
                     >
                         <Icon name='user' size='large' />

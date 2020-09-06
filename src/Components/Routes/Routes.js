@@ -6,6 +6,7 @@ import Students from '../Students/Students'
 import About from '../About/About'
 // import User from '../User/User'
 import Login from '../Login/Login'
+import Register from "../Register/Register"
 
 class Routes extends React.Component {
     render() {
@@ -22,9 +23,12 @@ class Routes extends React.Component {
             <Route path='/About'>
                 <About />
             </Route>
-            <Route path='/User'>
+            <Route path='/Login'>
                 {/* <User /> */}
                 <Login />
+            </Route>
+            <Route path='/Register'>
+                <Register />
             </Route>
         </Switch>
     }
