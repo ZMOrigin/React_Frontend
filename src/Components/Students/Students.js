@@ -6,6 +6,7 @@ const mapStateToProps = (state) => {
     const students = state.users.filter(user => {
         return user.role === "Student"
     })
+    console.log(students)
     return {
         users: students
     }

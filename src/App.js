@@ -30,7 +30,17 @@ class App extends React.Component {
         super(props)
         socket.emit("get", "appData", "5f466cc18596f6242caa02b4", (e, data) => {
             this.props.setData(data)
+            console.log("data: ")
+            console.log(data)
         })
+
+        // socket.emit("get", "users", "5f43a76cf9827034dc5cc701", (e, data) => {
+        //     this.props.setUsers(data)
+        //     console.log("users: ")
+        //     console.log(data)
+        // })
+        // console.log("users: ")
+        // console.log(this.state.users)
         const users = [{
             name: {
                 firstName: "Bill",
