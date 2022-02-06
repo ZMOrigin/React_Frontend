@@ -4,9 +4,9 @@ import "./CardGroup.css"
 import UserModal from "../UserModal/UserModal"
 
 class CardGroup extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     render() {
         return <div className="container84 cardWrapper">

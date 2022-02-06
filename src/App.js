@@ -9,7 +9,7 @@ import 'semantic-ui-css/semantic.min.css'
 import { setData, setUsers } from "./Redux/Actions/index"
 import { connect } from 'react-redux'
 //import getData from './Assets/data'
-import { socket } from './client'
+// import { socket } from './client'
 import axios from 'axios'
 
 let mapDispatchToProps = (dispatch) => {
@@ -51,7 +51,6 @@ class App extends React.Component {
         }
         axios(usersReqConfig).then(res => {
             const users = res.data.data
-            console.log(users)
             this.props.setUsers(users)
         })
         // socket.emit("get", "appData", "5f466cc18596f6242caa02b4", (e, data) => {

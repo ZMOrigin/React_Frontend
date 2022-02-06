@@ -1,15 +1,15 @@
 import React from "react"
-import { Button, Header, Image, Modal, Icon, Grid } from 'semantic-ui-react'
+import { Button, Image, Modal, Icon, Grid } from 'semantic-ui-react'
 import "./UserModal.css"
 
 class UserModal extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     render() {
         return (
-            <Modal trigger={<a><Icon name='eye' />view contacts</a>}>
+            <Modal trigger={<p><Icon name='eye' />view contacts</p>}>
                 <Modal.Header className="modalHeader">
                     <h2>You are paying for the contact of this {this.props.user.role.toLowerCase()}</h2>
                 </Modal.Header>
