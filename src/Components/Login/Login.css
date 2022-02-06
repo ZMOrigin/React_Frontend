@@ -1,5 +1,6 @@
 #loginContainerWrapper {
     background-image: url('../../Assets/Images/JumboBG2.jpg') !important;
+    padding: 70px;
     background-size: contain;
 }
 

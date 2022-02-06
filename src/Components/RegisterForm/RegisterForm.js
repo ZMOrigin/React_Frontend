@@ -15,6 +15,9 @@ class RegisterForm extends React.Component {
                 <Form.Group widths='equal'>
                     <Form.Input fluid label='First name' placeholder='First name' />
                     <Form.Input fluid label='Last name' placeholder='Last name' />
+                </Form.Group>
+                <Form.Group widths='equal'>
+                    <Form.Input fluid label='Prefered name' placeholder='Prefered name' /> 
                     <Form.Select
                         fluid
                         label='Gender'
@@ -22,9 +25,21 @@ class RegisterForm extends React.Component {
                         placeholder='Gender'
                     />
                 </Form.Group>
-                <Form.TextArea label='About' placeholder='Tell us more about you...' />
+                <Form.Group widths='equal'>
+                    <Form.Input fluid label='Email' placeholder='joe@schmoe.com' /> 
+                </Form.Group>
+                <Form.Group widths='equal'>
+                    <Form.Input label='Enter your password' type='password' />
+                </Form.Group>
+                <Form.Group widths='equal'>
+                    <Form.Input label='Re-enter your password' type='password' />
+                </Form.Group>
+                <Form.Group widths='equal'>
+                    <Form.Input label='Phone number' />
+                </Form.Group>
+                {/* <Form.TextArea label='About' placeholder='Tell us more about you...' /> */}
                 <Form.Checkbox label='I agree to the Terms and Conditions' />
-                <Button fluid type='submit'>Login</Button>
+                <Button fluid type='submit'>Sign Up</Button>
             </Form>
         </div>
     }
