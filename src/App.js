@@ -34,7 +34,7 @@ class App extends React.Component {
             url: 'http://localhost:3131/appData',
             method: 'get',
             headers: {
-                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE2NDQxNTgwMjYsImV4cCI6MTY0NDI0NDQyNiwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiNjFmZWI2N2NiMWJjNzkxMTYwNmEwNDc0IiwianRpIjoiMjI1NWY2ZjItMDY2Zi00ZWE3LWEyZGYtNDMzMzc2ZjM5YmU4In0.92QpbxYqlM54y9hYwH9R7zPGTe6JeMm2cxHbmzOOLMI'
+                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE2NDQzMDA1MjYsImV4cCI6MTY0NDM4NjkyNiwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiNjFmZWI2N2NiMWJjNzkxMTYwNmEwNDc0IiwianRpIjoiYmFlNzg1NTUtMTk5My00M2M2LWI0OTYtMDEwMmQ0ZDI0ZjcxIn0.g1e9cuIZpXO-PuHG4mI7f3Kt_wXX4MrfMJNOqU6LFeA'
             }
         }
         axios(dataReqConfig).then(res => {
@@ -46,7 +46,7 @@ class App extends React.Component {
             url: 'http://localhost:3131/users',
             method: 'get',
             headers: {
-                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE2NDQxNTgwMjYsImV4cCI6MTY0NDI0NDQyNiwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiNjFmZWI2N2NiMWJjNzkxMTYwNmEwNDc0IiwianRpIjoiMjI1NWY2ZjItMDY2Zi00ZWE3LWEyZGYtNDMzMzc2ZjM5YmU4In0.92QpbxYqlM54y9hYwH9R7zPGTe6JeMm2cxHbmzOOLMI'
+                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE2NDQzMDA1MjYsImV4cCI6MTY0NDM4NjkyNiwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiNjFmZWI2N2NiMWJjNzkxMTYwNmEwNDc0IiwianRpIjoiYmFlNzg1NTUtMTk5My00M2M2LWI0OTYtMDEwMmQ0ZDI0ZjcxIn0.g1e9cuIZpXO-PuHG4mI7f3Kt_wXX4MrfMJNOqU6LFeA'
             }
         }
         axios(usersReqConfig).then(res => {
