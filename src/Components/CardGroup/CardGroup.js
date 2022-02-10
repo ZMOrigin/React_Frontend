@@ -4,9 +4,6 @@ import "./CardGroup.css"
 import UserModal from "../UserModal/UserModal"
 
 class CardGroup extends React.Component {
-    // constructor(props) {
-    //     super(props)
-    // }
 
     render() {
         return <div className="container84 cardWrapper">
@@ -22,12 +19,15 @@ class CardGroup extends React.Component {
                                         </Grid.Column>
                                         <Grid.Column width={10}>
                                             <Card.Content>
-                                                <Card.Header>{user.name.firstName} {user.name.lastName}</Card.Header>
+                                                <Card.Header>{user.name}</Card.Header>
                                                 <Card.Meta>
                                                     Gender: {user.gender}
                                                 </Card.Meta>
+                                                <div>
+                                                    <Card.Description>costs: {user.costsExpectation}</Card.Description>
+                                                </div>
                                                 <div className="specialties">
-                                                    {user.specialty.map(ele => {
+                                                    {user.areas.map(ele => {
                                                         return <div className="specialty">{ele}</div>
                                                     })}
                                                 </div>
@@ -36,10 +36,11 @@ class CardGroup extends React.Component {
                                     </Grid.Row>
                                 </Grid>
                                 <Card.Description>
-                                    {user.intro.substring(0, 65) + "..."}
+                                    {user.specifications.substring(0, 65) + "..."}
                                 </Card.Description>
                                 <div extra>
-                                    <UserModal user={user}/>
+                                    {/* {console.log("lalala: ", this.props.role)} */}
+                                    <UserModal user={user} role={this.props.role}/>
                                 </div>
                             </Card>
                         </Grid.Column>

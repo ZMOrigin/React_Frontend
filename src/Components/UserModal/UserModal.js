@@ -3,15 +3,19 @@ import { Button, Image, Modal, Icon, Grid } from 'semantic-ui-react'
 import "./UserModal.css"
 
 class UserModal extends React.Component {
-    // constructor(props) {
-    //     super(props)
-    // }
+    buildModal = () => {
+        if (this.props.role === "student") {
+
+        } else if (this.props.role === "teacher") {
+
+        }
+    }
 
     render() {
         return (
             <Modal trigger={<p><Icon name='eye' />view contacts</p>}>
                 <Modal.Header className="modalHeader">
-                    <h2>You are paying for the contact of this {this.props.user.role.toLowerCase()}</h2>
+                    <h2>You are paying for the contact of {this.props.user.name}</h2>
                 </Modal.Header>
                 <Modal.Content>
                     <Grid>
@@ -22,13 +26,13 @@ class UserModal extends React.Component {
                             <Grid.Column width={10}>
                                 <Modal.Description>
                                     <div className="pointBars"></div>
-                                    <h1>{this.props.user.name.firstName} {this.props.user.name.lastName}</h1>
+                                    <h1>{this.props.user.name}</h1>
                                     <h3>Gender: {this.props.user.gender}</h3>
-                                    <h3>Nationality: {this.props.user.country}</h3>
+                                    {/* <h3>Nationality: {this.props.user.country}</h3> */}
                                     <h3>Language: {(this.props.user.language.join("; "))}</h3>
-                                    <p>{this.props.user.intro}</p>
+                                    <p>{this.props.user.specifications}</p>
                                     <div className="specialties">
-                                        {this.props.user.specialty.map(ele => {
+                                        {this.props.user.areas.map(ele => {
                                             return <div className="specialty">{ele}</div>
                                         })}
                                     </div>

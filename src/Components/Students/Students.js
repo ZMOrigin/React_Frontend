@@ -3,19 +3,22 @@ import { connect } from 'react-redux'
 import CardGroup from "../CardGroup/CardGroup"
 
 const mapStateToProps = (state) => {
-    const students = state.users.filter(user => {
-        return user.role === "Student"
-    })
-    console.log(students)
+    // const students = state.users.filter(user => {
+    //     return user.role === "Student"
+    // })
+    const students = state.students
+    // console.log("students: ", students)
     return {
-        users: students
+        students: students
     }
 }
 
 class Students extends React.Component {
     render() {
+        console.log("students: ", this.props.students)
+
         return <div>
-            <CardGroup users={this.props.users} />
+            <CardGroup users={this.props.students} role={"student"}/>
         </div>
     }
 }

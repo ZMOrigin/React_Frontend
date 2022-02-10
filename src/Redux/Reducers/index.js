@@ -1,9 +1,12 @@
-import { CHANGE_PAGE, SET_DATA, SET_USERS } from '../Constants/index'
+// import { CHANGE_PAGE, SET_DATA, SET_USERS } from '../Constants/index'
+
+import { CHANGE_PAGE, SET_DATA, SET_STUDENTS, SET_TEACHERS } from '../Constants/index'
 
 const initialState = {
     page: "Home",
     data: {},
-    users: []
+    students: [],
+    teachers: []
 };
 
 let rootReducer = (state = initialState, action) => {
@@ -19,9 +22,23 @@ let rootReducer = (state = initialState, action) => {
         })
     }
 
-    if (action.type === SET_USERS) {
+    // if (action.type === GET_STUDENTS) {
+    //     return state.students
+    // }
+
+    // if (action.type === GET_TEACHERS) {
+    //     return state.students
+    // }
+
+    if (action.type === SET_STUDENTS) {
         return Object.assign({}, state, {
-            users: action.payload
+            students: action.payload
+        })
+    }
+
+    if (action.type === SET_TEACHERS) {
+        return Object.assign({}, state, {
+            teachers: action.payload
         })
     }
 
