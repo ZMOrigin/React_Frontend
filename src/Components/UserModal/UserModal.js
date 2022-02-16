@@ -3,14 +3,11 @@ import { Button, Image, Modal, Icon, Grid } from 'semantic-ui-react'
 import "./UserModal.css"
 
 class UserModal extends React.Component {
-    buildModal = () => {
-        if (this.props.role === "student") {
-
-        } else if (this.props.role === "teacher") {
-
+    appendUniversity = (props) => {
+        if (props.role === "teacher") {
+            return <h2 id="university">{props.user.university}</h2>
         }
     }
-
     render() {
         return (
             <Modal trigger={<p><Icon name='eye' />view contacts</p>}>
@@ -22,20 +19,24 @@ class UserModal extends React.Component {
                         <Grid.Row>
                             <Grid.Column width={6}>
                                 <Image size='medium' src={this.props.user.avatar} wrapped />
+                                {this.appendUniversity(this.props)}
                             </Grid.Column>
                             <Grid.Column width={10}>
                                 <Modal.Description>
                                     <div className="pointBars"></div>
-                                    <h1>{this.props.user.name}</h1>
+                                    <div id="nameAndLocation">
+                                        <h1 id="headerName">{this.props.user.name}</h1>
+                                        <Icon color='red' name="location arrow"/><p id="location">Location: {this.props.user.location}</p>
+                                    </div>
                                     <h3>Gender: {this.props.user.gender}</h3>
                                     {/* <h3>Nationality: {this.props.user.country}</h3> */}
-                                    <h3>Language: {(this.props.user.language.join("; "))}</h3>
-                                    <p>{this.props.user.specifications}</p>
+                                    <h3>Language: {(this.props.user.language.join(", "))}</h3>
                                     <div className="specialties">
                                         {this.props.user.areas.map(ele => {
                                             return <div className="specialty">{ele}</div>
                                         })}
                                     </div>
+                                    <p>{this.props.user.specifications}</p>
                                 </Modal.Description>
                             </Grid.Column>
                         </Grid.Row>

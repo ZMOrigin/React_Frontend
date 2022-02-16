@@ -20,7 +20,7 @@ class LoginForm extends React.Component {
             baseUrl: 'http://localhost:3131',
             url: 'http://localhost:3131/Authentication',
             method: 'post',
-            email: this.state.,
+            email: 'admin@feathersjs.com',
             password: 'admin'
         }
         

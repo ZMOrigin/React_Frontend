@@ -11,7 +11,7 @@
 
 .ten.wide.column > .description > p{
     margin-bottom: 10px;
-    padding-top: 15px
+    padding-top: 50px
 }
 
 .ten.wide.column > .description > h1{
@@ -23,4 +23,21 @@
 .ten.wide.column > .description > .pointBars{
     width: 50px;
     height: 5px
+}
+
+#location {
+    display: inline-block;
+}
+
+#headerName {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#nameAndLocation {
+    padding-bottom: 20px;
+}
+
+#university {
+    text-align: center;
 }
