@@ -88,7 +88,7 @@ class Navbar extends React.Component {
                         to= {this.props.loggedIn ? '/Profile' : '/Login'}
                         name='Login'
                         onClick={this.handleClick}
-                        active={this.props.page === 'Login'}
+                        active={this.props.page === 'Login' || this.props.page === 'Profile'}
                         className='menuIcons'
                     >
                         <Icon name='user' size='large' />
