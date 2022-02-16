@@ -2,6 +2,7 @@ import React from 'react'
 import { Segment, Form, Button, Popup } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import "./LoginForm.css"
+import axios from 'axios'
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -12,6 +13,18 @@ class LoginForm extends React.Component {
             emailLen: 0,
             validEmail: false
         }
+    }
+
+    login = () => {
+        const loginReqConfig = {
+            baseUrl: 'http://localhost:3131',
+            url: 'http://localhost:3131/Authentication',
+            method: 'post',
+            email: this.state.,
+            password: 'admin'
+        }
+        
+        axios(loginReqConfig).then(res => localStorage.push("token", res.token))
     }
 
     validateEmail = (e) => {
@@ -62,10 +75,12 @@ class LoginForm extends React.Component {
     }
 
     handleSubmit = () => {
-
+        this.login();
+        console.log(localStorage)
     }
 
     render = () => {
+        console.log(localStorage)
 
         let popups = {
             email: {
