@@ -1,12 +1,12 @@
-// import { CHANGE_PAGE, SET_DATA, SET_USERS } from '../Constants/index'
-
-import { CHANGE_PAGE, SET_DATA, SET_STUDENTS, SET_TEACHERS } from '../Constants/index'
+import jwt from 'jsonwebtoken'
+import { CHANGE_PAGE, SET_DATA, SET_STUDENTS, SET_TEACHERS, SET_LOGIN } from '../Constants/index'
 
 const initialState = {
     page: "Home",
     data: {},
     students: [],
-    teachers: []
+    teachers: [],
+    loggedIn: false
 };
 
 let rootReducer = (state = initialState, action) => {
@@ -40,6 +40,18 @@ let rootReducer = (state = initialState, action) => {
         return Object.assign({}, state, {
             teachers: action.payload
         })
+    }
+
+    if (action.type === SET_LOGIN) {
+        const token = localStorage.getItem('jwt')
+        let valid = false
+        if (token) {
+            const decodedToken = jwt.decode(token, 'GqD/oODa54IghC+7zwPG7LLurc0=') | { exp: new Date().getTime() - 10 }
+            const dateNow = new Date()
+            valid = decodedToken.exp < dateNow.getTime() ? false : true
+        }
+
+        return Object.assign({}, state, { loggedIn: valid })
     }
 
     return state;

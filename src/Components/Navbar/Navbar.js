@@ -10,6 +10,7 @@ import {
     Icon
 } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import jwt from 'jsonwebtoken'
 
 let mapDispatchToProps = (dispatch) => {
     return {
@@ -20,7 +21,8 @@ let mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
     return {
         page: state.page,
-        data: state.data
+        data: state.data,
+        loggedIn: state.loggedIn
     }
 }
 
@@ -32,6 +34,7 @@ class Navbar extends React.Component {
             atTop: true
         }
     }
+
 
     listenScrollEvent = (e) => {
         if (window.scrollY < 100) {
@@ -82,7 +85,7 @@ class Navbar extends React.Component {
                         <Icon className='searchIcon' size='large' name='search' onClick={this.toggleSearch} />
                     </div>
                     <Menu.Item as={Link}
-                        to='/Login'
+                        to= {this.props.loggedIn ? '/Profile' : '/Login'}
                         name='Login'
                         onClick={this.handleClick}
                         active={this.props.page === 'Login'}

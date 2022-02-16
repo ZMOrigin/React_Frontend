@@ -1,6 +1,6 @@
 // import { CHANGE_PAGE, SET_DATA, SET_USERS } from "../Constants/index"
 
-import { CHANGE_PAGE, SET_DATA, SET_TEACHERS, SET_STUDENTS } from "../Constants/index"
+import { CHANGE_PAGE, SET_DATA, SET_TEACHERS, SET_STUDENTS, SET_LOGIN } from "../Constants/index"
 
 export function changePage(payload) {
   return { type: CHANGE_PAGE, payload }
@@ -20,6 +20,10 @@ export function setTeachers(payload) {
 
 export function setStudents(payload) {
   return {type: SET_STUDENTS, payload }
+}
+
+export function setLogin(payload) {
+  return {type: SET_LOGIN, payload }
 }
 
 // export function getTeachers(payload) {
